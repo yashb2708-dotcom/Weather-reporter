@@ -53,7 +53,7 @@ class TestWeatherReporter(unittest.TestCase):
             'wind_speed': 12.3
         }
         report = weather_reporter.build_report('Dresden', weather)
-        self.assertIn('Dresden', report)
+        self.assertIn('DRESDEN', report)
         self.assertIn('15.5°C', report)
         self.assertIn('Slight rain', report)
         self.assertIn('12.3 km/h', report)
